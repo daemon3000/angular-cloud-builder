@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/angular:8.3.17', '.']
+images:
+- 'gcr.io/$PROJECT_ID/angular'
+tags: ['daemon3000']
